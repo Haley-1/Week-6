@@ -8,4 +8,7 @@ Crab_data |>
 
 #this is for the repository file :)
 
-Crab_data
+Summary <- Crab_data |> 
+  summarise(.by = year, mean_bottom_temp = mean(bottom_temperature, na.rm = TRUE))
+
+  
